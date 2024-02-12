@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="areaprincipal"> <!--Area principal de la pantalla-->
+
+        <img src="img/Logo@2x.svg" alt="" class="logo">
+
+        <div class="encriptarTexto"> <!--cuadro de texto para escribir el texto encriptar-->
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Escribe aquí el texto"></textarea>
+        </div>
+
+        <div class="condicionesJuego"> <!--Párrafo que contiene las condiciones del juego encima de los botoes-->
+            <img src="img/bi_exclamation-circle-fill.png"></img>
+            <p>Solo letras minúsculas y sin acento</p>
+        </div>
+
+        <div class="botones"> <!--Botones del juego par encriptar y desencriptar-->
+            <button id="botonEncriptar" class="botonEncriptar" type="button"
+                onclick="encriptarTexto()">Encriptar</button>
+            <button class="botonDesencriptar" type="button" onclick="desEncriptarTexto()">Desencriptar</button>
+        </div>
+
+        <div class="encriptado"> <!--Seccion que muestras las acciones realizadas dentro del juego-->
+            <img src="img/Muñeco.svg" alt="" id="Muñeco">
+
+            <div class="mensajeEncriptado" id="mensajeEncriptado"> <!--Avisos del panel de acciones del juego-->
+                <h2 id="mensaje-encriptado">No se ha encontrado ningún mensaje</h2>
+                <p id="textoCopiado">Ingresa el texto que desea encriptar o desencriptar</p>
+                <button class="copiar" type="button" onclick="copiarTexto()">Copiar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="alternativo.js"></script>
+
+</html>

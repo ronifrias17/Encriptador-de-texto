@@ -1,0 +1,280 @@
+/*Margen y espaciamiento interno del toda la página*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin-top: 30px;
+    left: 30px;
+}
+
+.areaprincipal {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #f3f5fc;
+}
+
+.texto {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 15%;
+    top: 20%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+    resize: none;
+}
+
+.texto::placeholder {
+    color: #0a3871;
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+.condicionesJuego {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 80%;
+}
+
+.condicionesJuego p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    order: 1;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 82%;
+}
+
+.botonEncriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    margin-right: 4%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.botonDesencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: 15%;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.botonEncriptar:hover,
+.botonDesencriptar:hover,
+.copiar:hover {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+    border-radius: 32px;
+}
+
+.mensajeEncriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.encriptado img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 10%;
+}
+
+.mensajeEncriptado h2 {
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    color: #343a40;
+}
+
+.mensajeEncriptado p {
+    width: 80%;
+    font-size: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.mensajeEncriptado button {
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+
+}
+
+/*Reponsive desing*/
+
+@media screen and (max-width: 720px) {
+    .areaprincipal {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .logo {
+        padding: 0;
+        width: 70px;
+        height: 70px;
+        left: 15%;
+    }
+
+    .encriptarTexto {
+        width: 100%;
+    }
+
+    .texto {
+        width: 80%;
+        height: 60%;
+        left: 15%;
+        top: 20%;
+    }
+
+    .condicionesJuego {
+        width: 80%;
+        left: 15%;
+        top: 67%;
+    }
+
+    .condicionesJuego p {
+        font-size: 16px;
+    }
+
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 48%;
+    }
+
+    .botonEncriptar,
+    .botonDesencriptar {
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .botonEncriptar:hover,
+    .botonDesencriptar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .encriptado {
+        width: 90%;
+        height: 30%;
+        left: 5%;
+        top: 60%;
+    }
+
+    .mensajeEncriptado {
+        width: 100%;
+        height: 5%;
+        top: 45%;
+    }
+
+    .mensajeEncriptado h2 {
+        width: 95%;
+    }
+
+    .encriptado img {
+        height: 50%;
+        display: none;
+        visibility: hidden;
+    }
+}
